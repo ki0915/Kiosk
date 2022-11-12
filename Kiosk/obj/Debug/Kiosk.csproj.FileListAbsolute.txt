@@ -1,0 +1,6 @@
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.SuggestedBindingRedirects.cache
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk\obj\Debug\Credit.g.cs
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk\obj\Debug\MainWindow.g.cs
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk\obj\Debug\App.g.cs
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk\obj\Debug\Kiosk_MarkupCompile.cache
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk\obj\Debug\Kiosk_MarkupCompile.lref

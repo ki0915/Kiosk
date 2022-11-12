@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1b57c6d0-7e74-4984-9e1a-e3e83b9c888a": {
+      "ProjectGuid": "1b57c6d0-7e74-4984-9e1a-e3e83b9c888a",
+      "DisplayName": "Kiosk",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
+    },
+    "78c74bfe-ea9a-4b6b-85a7-9f530d4a1c74": {
+      "ProjectGuid": "78c74bfe-ea9a-4b6b-85a7-9f530d4a1c74",
+      "DisplayName": "Kiosk_kms",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
