@@ -46,7 +46,7 @@
                          BorderBrush="Transparent"
                         ScrollViewer.VerticalScrollBarVisibility="Disabled"
                         ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.ColumnSpan="1" RenderTransformOrigin="0.706,0.473"
-                         >
+                         SelectionChanged="price">
                     
                     <ListBox.ItemsPanel>
                         <ItemsPanelTemplate >
