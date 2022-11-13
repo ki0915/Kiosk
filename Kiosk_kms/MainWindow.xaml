@@ -5,18 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kiosk_kms"
         mc:Ignorable="d"
-        ResizeMode="NoResize"
         Title="MainWindow" Height="1000" Width="1000">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-
-
+    <Grid Height="1000" Width="1000">
         <Frame Name="frame"
-            Grid.Row="0"
-               NavigationUIVisibility="Hidden"
+               NavigationUIVisibility="Automatic"
                Source="/View/OrderPage.xaml">
         </Frame>
     </Grid>

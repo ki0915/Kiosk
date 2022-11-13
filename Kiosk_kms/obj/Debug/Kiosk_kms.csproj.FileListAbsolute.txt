@@ -15,6 +15,5 @@ C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.exe
 C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.pdb
 C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.csproj.AssemblyReference.cache
 C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\OrderPage.g.cs
-C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\PlacePage.g.cs
 C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\OrderPage.baml
-C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\PlacePage.baml
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\App.baml
