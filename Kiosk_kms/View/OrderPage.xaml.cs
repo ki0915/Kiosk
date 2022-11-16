@@ -15,15 +15,15 @@ using System.Windows.Shapes;
 
 namespace Kiosk_kms.View
 {
+
+    
     /// <summary>
     /// OrderPage.xaml에 대한 상호 작용 논리
     /// </summary>
     public partial class OrderPage : Page
     {
-
-        private int price;
-        private Category categoryWide;
-
+        private int sumPrice = 0;
+        private string menulist ="";
         public OrderPage()
         {
             InitializeComponent();
@@ -35,8 +35,23 @@ namespace Kiosk_kms.View
             if (lbCategory.SelectedIndex == -1) return;
 
             Category category = (Category)lbCategory.SelectedIndex;
-            categoryWide = category;
             lbMenus.ItemsSource = listFood.Where(x => x.category == category).ToList();
+        }
+
+
+        private void lbMenus_SelectedChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lbMenus.SelectedIndex == -1) return;
+
+            Food food = listFood[lbMenus.SelectedIndex];
+            
+            sumPrice += food.price;
+
+            Price.Text = sumPrice.ToString();
+
+            menulist += food.name;
+             menulist += " ";
+            MenuList.Text = menulist;
         }
 
 
@@ -77,7 +92,6 @@ namespace Kiosk_kms.View
 
              new View.Food() { category = View.Category.DRINK,
              name = "스프라이트", imagePath = @"/images/스프라이트.png", price = 10000 },
-
         };
 
         
