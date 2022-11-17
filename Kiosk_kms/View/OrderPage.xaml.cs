@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,8 +21,11 @@ namespace Kiosk_kms.View
     /// <summary>
     /// OrderPage.xaml에 대한 상호 작용 논리
     /// </summary>
+    /// 
     public partial class OrderPage : Page
     {
+
+
         private int sumPrice = 0;
         private string menulist ="";
         public OrderPage()
@@ -34,6 +38,8 @@ namespace Kiosk_kms.View
         {
             if (lbCategory.SelectedIndex == -1) return;
 
+
+
             Category category = (Category)lbCategory.SelectedIndex;
             lbMenus.ItemsSource = listFood.Where(x => x.category == category).ToList();
         }
@@ -43,7 +49,7 @@ namespace Kiosk_kms.View
         {
             if (lbMenus.SelectedIndex == -1) return;
 
-            Food food = listFood[lbMenus.SelectedIndex];
+            Food food = (Food)lbMenus.SelectedItem;
             
             sumPrice += food.price;
 
@@ -57,7 +63,7 @@ namespace Kiosk_kms.View
 
         private void OrderPage_Loaded(object sender, RoutedEventArgs e)
         {
-            lbCategory.SelectedIndex = 0;
+            dr = cmd.ExecuteReader();
             lbMenus.ItemsSource = listFood.Where(x => x.category == Category.BURGER).ToList();
         }
 
@@ -65,7 +71,8 @@ namespace Kiosk_kms.View
         {
             PlacePage placePage = new PlacePage();
             NavigationService.Navigate(placePage);
-        }*/
+        }
+        */
 
         private List<View.Food> listFood = new List<View.Food>()
         {

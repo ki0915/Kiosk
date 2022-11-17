@@ -11,9 +11,10 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="200"/>
-                <RowDefinition Height="500"/>
-                <RowDefinition Height="50"/>
-				<RowDefinition Height="50"/>
+                <RowDefinition Height="400"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="80"/>
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0" Width="1000">
@@ -32,7 +33,7 @@
                     <ListBoxItem Height="200" Width="250">음료수</ListBoxItem>
                 </ListBox>
             </Grid>
-            
+
             <Grid Grid.Row="1">
                 <ListBox x:Name="lbMenus"
                          FontSize="16"
@@ -56,18 +57,20 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
             </Grid>
-			<Grid Grid.Row="2">
-	
-				<TextBlock x:Name="MenuList" Text="" FontSize="16"
+            <Grid Grid.Row="2">
+
+                <TextBlock x:Name="MenuList" Text="" FontSize="16"
                          FontWeight="SemiBold"
                          />
-			</Grid>
-			<Grid Grid.Row="3">
-				<TextBlock x:Name="Price" Text="" FontSize="16"
+            </Grid>
+            <Grid Grid.Row="3">
+                <TextBlock x:Name="Price" Text="" FontSize="16"
                          FontWeight="SemiBold"
                          />
-			</Grid>
-			
+            </Grid>
+            <Grid Grid.Row="4">
+                <Button Content="Button" HorizontalAlignment="Left"  Height="80" Width="1000"/>
+            </Grid>
         </Grid>
     </Grid>
 </Page>
