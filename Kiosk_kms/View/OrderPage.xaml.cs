@@ -63,7 +63,7 @@ namespace Kiosk_kms.View
 
         private void OrderPage_Loaded(object sender, RoutedEventArgs e)
         {
-            dr = cmd.ExecuteReader();
+            
             lbMenus.ItemsSource = listFood.Where(x => x.category == Category.BURGER).ToList();
         }
 
