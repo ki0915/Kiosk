@@ -40,7 +40,7 @@ namespace Kiosk_kms.View
 
 
 
-            Category category = (Category)lbCategory.SelectedIndex;
+            Category category = (Food)lbCategory.SelectedIndex;
             lbMenus.ItemsSource = listFood.Where(x => x.category == category).ToList();
         }
 
@@ -63,8 +63,21 @@ namespace Kiosk_kms.View
 
         private void OrderPage_Loaded(object sender, RoutedEventArgs e)
         {
-            
-            lbMenus.ItemsSource = listFood.Where(x => x.category == Category.BURGER).ToList();
+            SqlConnection sqlcon = new SqlConnection("Server=127.0.0.1; Database=KioskDB; uid=root; pwd=1234");
+
+            sqlcon.Open();
+
+            string strSql_Select = "select id,name,image, category, price from Kiosk_TB";
+            SqlCommand cmd_Select = new SqlCommand(strSql_Select, sqlcon);
+
+            SqlDataReader rd = cmd_Select.ExecuteReader();
+
+            while (rd.Read())
+            {
+                listFood.Add
+            }
+
+            lbMenus.ItemsSource = listFood.Where(x => x.category == "BURGER").ToList();
         }
 
         /*private void btnOrder_Click(object sender, RoutedEventArgs e)
@@ -74,32 +87,9 @@ namespace Kiosk_kms.View
         }
         */
 
-        private List<View.Food> listFood = new List<View.Food>()
-        {
-            new View.Food() { category = View.Category.BURGER, name = "불고기 버거",
-            imagePath = @"/images/불고기 버거.png", price = 10000 },
-            new View.Food() { category = View.Category.BURGER,
-            name = "핫크리스피 버거", imagePath = @"/images/핫크리스피 버거.png", price = 10000},
-             new View.Food() { category = View.Category.BURGER,
-            name = "더블 한우불고기", imagePath = @"/images/더블 한우불고기.png" , price = 10000},
+        private List<View.Food> listFood = new List<View.Food>();
 
-             new View.Food() { category = View.Category.BURGER,
-            name = "클래식 치즈버거", imagePath = @"/images/클래식 치즈버거.png" , price = 10000},
-                new View.Food() { category = View.Category.BURGER,
-            name = "새우 버거", imagePath = @"/images/새우 버거.png" , price = 10000},
-            new View.Food() { category = View.Category.BURGER,
-            name = "힙&핫치킨버거", imagePath = @"/images/힙&핫치킨버거.png", price = 10000},
-            new View.Food() { category = View.Category.BURGER,
-            name = "리아미라클버거", imagePath = @"/images/클래식 치즈버거.png" , price = 10000},
-            new View.Food() { category = View.Category.BURGER,
-            name = "더블X2", imagePath = @"/images/더블X2.png", price = 10000 },
-
-             new View.Food() { category = View.Category.DRINK,
-             name = "코카콜라", imagePath = @"/images/코카콜라.png" , price = 10000},
-
-             new View.Food() { category = View.Category.DRINK,
-             name = "스프라이트", imagePath = @"/images/스프라이트.png", price = 10000 },
-        };
+       
 
         
     }

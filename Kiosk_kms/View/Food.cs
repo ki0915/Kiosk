@@ -8,7 +8,7 @@ namespace Kiosk_kms.View
 {
     public class Food
     {
-        public Category category { get; set; }
+        public string category { get; set; }
         public string imagePath { get; set; }
         public string name { get; set; }
 
