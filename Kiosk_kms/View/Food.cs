@@ -13,5 +13,10 @@ namespace Kiosk_kms.View
         public string name { get; set; }
 
         public int price { get; set; }
+
+        public static explicit operator Food((object, object, object, object) v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

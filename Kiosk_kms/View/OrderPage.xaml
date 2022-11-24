@@ -31,6 +31,7 @@
                     </ListBox.ItemsPanel>
                     <ListBoxItem Height="200" Width="250">버거</ListBoxItem>
                     <ListBoxItem Height="200" Width="250">음료수</ListBoxItem>
+                    <ListBoxItem Height="200" Width="250">로그인</ListBoxItem>
                 </ListBox>
             </Grid>
 

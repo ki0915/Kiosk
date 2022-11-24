@@ -1,0 +1,43 @@
+﻿<Page x:Class="Kiosk_kms.View.UpdatePage"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kiosk_kms.View"
+      mc:Ignorable="d" 
+      Height="1000" Width="1000"
+      Title="OrderPage">
+    <Grid>
+        <Border BorderThickness="0" CornerRadius="10" Margin="10, 30, 10, 10"
+                   Background="White">
+            <StackPanel Orientation="Vertical" Margin="40, 15, 40, 5">
+                <TextBlock Foreground="Gray" FontSize="40" FontFamily="Ebrima" 
+                          Text="업데이트"></TextBlock>
+                <TextBlock Foreground="Gray" FontSize="20" FontFamily="Ebrima" 
+                          Text="추가하고 싶은 정보의 아이디, 이미지패스, 카테고리, 이름, 가격을 입력하세요."></TextBlock>
+                <TextBlock Text="아이디" Foreground="Gray" FontWeight="Bold" Margin="0,10,0,0"></TextBlock>
+                <Border BorderThickness="1.3" BorderBrush="Gray" Height="40" CornerRadius="13" Padding="5,10,5,5">
+                    <TextBox x:Name="productId" BorderThickness="0" TextAlignment="Center" FontSize="15"></TextBox>
+                </Border>
+                <TextBlock Text="이름" Foreground="Gray" FontWeight="Bold"></TextBlock>
+                <Border BorderThickness="1.3" BorderBrush="Gray" Height="40" CornerRadius="13" Padding="5,10,5,5">
+                    <TextBox x:Name="productName" BorderThickness="0" TextAlignment="Center" FontSize="15"></TextBox>
+                </Border>
+                <TextBlock Text="이미지 경로" Foreground="Gray" FontWeight="Bold"></TextBlock>
+                <Border BorderThickness="1.3" BorderBrush="Gray" Height="40" CornerRadius="13" Padding="5,10,5,5">
+                    <TextBox x:Name="productImage" BorderThickness="0" TextAlignment="Center" FontSize="15"></TextBox>
+                </Border>
+                <TextBlock Text="카테고리" Foreground="Gray" FontWeight="Bold"></TextBlock>
+                <Border BorderThickness="1.3" BorderBrush="Gray" Height="40" CornerRadius="13" Padding="5,10,5,5">
+                    <TextBox x:Name="productCategory" BorderThickness="0" TextAlignment="Center" FontSize="15"></TextBox>
+                </Border>
+                <TextBlock Text="가격" Foreground="Gray" FontWeight="Bold"></TextBlock>
+                <Border BorderThickness="1.3" BorderBrush="Gray" Height="40" CornerRadius="13" Padding="5,10,5,5">
+                    <TextBox x:Name="productPrice" BorderThickness="0" TextAlignment="Center" FontSize="15"></TextBox>
+                </Border>
+                <Button x:Name="Product_Add" Margin="0,25,0,0" FontSize="20" Content ="상품 추가" Click="Product_Update"/>
+                <Button x:Name="Product_Del" Margin="0,25,0,0" FontSize="20" Content ="상품 삭제" Click="Product_Delete"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

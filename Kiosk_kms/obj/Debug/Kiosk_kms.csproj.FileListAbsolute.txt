@@ -36,3 +36,7 @@ C:\Users\Nextop\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.csproj.G
 C:\Users\Nextop\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.csproj.CoreCompileInputs.cache
 C:\Users\Nextop\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.exe
 C:\Users\Nextop\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.pdb
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\AdminPage.g.cs
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\AdminPage.baml
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\UpdatePage.g.cs
+C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\UpdatePage.baml

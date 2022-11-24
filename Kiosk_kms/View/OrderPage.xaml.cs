@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -28,6 +29,7 @@ namespace Kiosk_kms.View
 
         private int sumPrice = 0;
         private string menulist ="";
+        private string cate;
         public OrderPage()
         {
             InitializeComponent();
@@ -37,11 +39,15 @@ namespace Kiosk_kms.View
         private void lbCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (lbCategory.SelectedIndex == -1) return;
-
-
-
-            Category category = (Food)lbCategory.SelectedIndex;
-            lbMenus.ItemsSource = listFood.Where(x => x.category == category).ToList();
+           
+            if (lbCategory.SelectedIndex == 0) cate = "BURGER";
+            else if (lbCategory.SelectedIndex == 1) cate ="DRINK";
+            else if(lbCategory.SelectedIndex == 2)
+            {
+                AdminPage adminPage = new AdminPage();
+                NavigationService.Navigate(adminPage);
+            }
+            lbMenus.ItemsSource = listFood.Where(x => x.category == cate).ToList();
         }
 
 
@@ -72,20 +78,30 @@ namespace Kiosk_kms.View
 
             SqlDataReader rd = cmd_Select.ExecuteReader();
 
+            
             while (rd.Read())
             {
-                listFood.Add
-            }
+                View.Food fd = new View.Food
+                {
+                    name = (string)rd["name"],
+                    imagePath = (string)rd["image"],
+                    category = (string)rd["category"],
+                    price = (int)rd["price"]
+                   };
 
-            lbMenus.ItemsSource = listFood.Where(x => x.category == "BURGER").ToList();
+                listFood.Add(fd);
+
         }
 
-        /*private void btnOrder_Click(object sender, RoutedEventArgs e)
+        lbMenus.ItemsSource = listFood.Where(x => x.category == "BURGER").ToList();
+        }
+
+        private void btnOrder_Click(object sender, RoutedEventArgs e)
         {
-            PlacePage placePage = new PlacePage();
-            NavigationService.Navigate(placePage);
+            WebClient webClient = new WebClient();
+
         }
-        */
+        
 
         private List<View.Food> listFood = new List<View.Food>();
 
