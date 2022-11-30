@@ -70,7 +70,7 @@
                          />
             </Grid>
             <Grid Grid.Row="4">
-                <Button Content="Button" HorizontalAlignment="Left"  Height="80" Width="1000"/>
+                <Button Content="Button" HorizontalAlignment="Left"  Height="80" Width="1000" Click="btnOrder_Click"/>
             </Grid>
         </Grid>
     </Grid>

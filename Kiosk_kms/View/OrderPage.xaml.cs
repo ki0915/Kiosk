@@ -30,6 +30,9 @@ namespace Kiosk_kms.View
         private int sumPrice = 0;
         private string menulist ="";
         private string cate;
+        private string url = "http://localhost:3000/";
+
+
         public OrderPage()
         {
             InitializeComponent();
@@ -98,11 +101,20 @@ namespace Kiosk_kms.View
 
         private void btnOrder_Click(object sender, RoutedEventArgs e)
         {
-            WebClient webClient = new WebClient();
+            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
+
+            httpWebRequest.Method = "POST";
+            httpWebRequest.ContentType = "application/json; utf-8";
+
+            using (var streamWriter = new System.IO.StreamWriter(httpWebRequest.GetRequestStream())) //전송
+            {
+                string json = "{ price: " + sumPrice.ToString() + "}";
+                streamWriter.Write(json);
+            }
 
         }
         
-
+        
         private List<View.Food> listFood = new List<View.Food>();
 
        

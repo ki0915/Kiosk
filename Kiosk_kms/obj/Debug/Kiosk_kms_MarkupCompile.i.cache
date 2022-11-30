@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\
 Kiosk_kms
 none
 false
 DEBUG;TRACE
-C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\App.xaml
+C:\기민수 kiosk\Kiosk\Kiosk_kms\App.xaml
 4463792241
 
 11-280281937
 13-1310406943
 MainWindow.xaml;View\AdminPage.xaml;View\OrderPage.xaml;View\UpdatePage.xaml;
 
-True
+False
 

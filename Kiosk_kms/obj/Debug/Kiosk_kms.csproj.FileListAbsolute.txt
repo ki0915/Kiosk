@@ -40,3 +40,26 @@ C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\AdminPage.g.cs
 C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\AdminPage.baml
 C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\UpdatePage.g.cs
 C:\Users\jihee\Documents\기민수\Kiosk\Kiosk_kms\obj\Debug\View\UpdatePage.baml
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.csproj.AssemblyReference.cache
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.csproj.SuggestedBindingRedirects.cache
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\MainWindow.g.cs
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\View\AdminPage.g.cs
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\View\OrderPage.g.cs
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\View\UpdatePage.g.cs
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\App.g.cs
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms_MarkupCompile.cache
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms_MarkupCompile.lref
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.exe
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.pdb
+C:\기민수 kiosk\Kiosk\Kiosk_kms\bin\Debug\Kiosk_kms.exe.config
+C:\기민수 kiosk\Kiosk\Kiosk_kms\bin\Debug\Kiosk_kms.exe
+C:\기민수 kiosk\Kiosk\Kiosk_kms\bin\Debug\Kiosk_kms.pdb
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\App.baml
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\MainWindow.baml
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\View\AdminPage.baml
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\View\OrderPage.baml
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\View\UpdatePage.baml
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.g.resources
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.Properties.Resources.resources
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.csproj.GenerateResource.cache
+C:\기민수 kiosk\Kiosk\Kiosk_kms\obj\Debug\Kiosk_kms.csproj.CoreCompileInputs.cache
