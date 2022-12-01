@@ -72,7 +72,7 @@ namespace Kiosk_kms.View
 
         private void OrderPage_Loaded(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection("Server=127.0.0.1; Database=KioskDB; uid=root; pwd=1234");
+            SqlConnection sqlcon = new SqlConnection("Server=127.0.0.1; Database=KioskDB; uid=admin; pwd=1234");
 
             sqlcon.Open();
 
@@ -102,23 +102,30 @@ namespace Kiosk_kms.View
         private void btnOrder_Click(object sender, RoutedEventArgs e)
         {
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
-
+            string answer;
             httpWebRequest.Method = "POST";
-            httpWebRequest.ContentType = "application/json; utf-8";
+            httpWebRequest.ContentType = "application/json";
 
             using (var streamWriter = new System.IO.StreamWriter(httpWebRequest.GetRequestStream())) //전송
             {
-                string json = "{ price: " + sumPrice.ToString() + "}";
+                string json = "{ \"price\": " + sumPrice.ToString() + "}";
                 streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
             }
 
+            var response = (HttpWebResponse)httpWebRequest.GetResponse(); //응답
+            using (var streamReader = new System.IO.StreamReader(response.GetResponseStream()))
+            {
+                var apiResult = streamReader.ReadToEnd();
+
+                answer = apiResult;
+            }
+
+            cashAnswer.Text = answer;
         }
-        
-        
+
+
         private List<View.Food> listFood = new List<View.Food>();
-
-       
-
-        
     }
 }
